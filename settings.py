@@ -3,18 +3,19 @@ from pathlib import Path
 from django.templatetags.static import static
 import dj_database_url
 
-# প্রজেক্টের রুট ডিরেক্টরি (যেখানে manage.py আছে)
+# root-directory
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# সিকিউরিটি সেটিংস (ডেভেলপমেন্টের জন্য)
+# security
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 DEBUG = True
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
-# অ্যাপ্লিকেশন ডেফিনেশন
+
+# applications
 INSTALLED_APPS = [
     'jazzmin',   
-    # "unfold",  # এটি সবার আগে দিন
-    # "unfold.contrib.filters",  # ফিল্টারের জন্য (অপশনাল)
+    # "unfold", 
+    # "unfold.contrib.filters", 
     # "unfold.contrib.forms",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -142,9 +143,7 @@ LOGOUT_REDIRECT_URL = 'login'
 
 JAZZMIN_SETTINGS = {
     # ড্যাশবোর্ডের টাইটেল
-    "site_title": "Veranda Admin",
     "site_header": "Veranda",
-    "site_brand": "Veranda Administration",
     
     # আপনার লোগো (static ফোল্ডারে যে পাথে আছে)
     "site_logo": "images/Veranda Logo/Logo.jpg", 
