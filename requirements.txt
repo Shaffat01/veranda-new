@@ -3,4 +3,4 @@ django-unfold
 django-jazzmin
 whitenoise
 gunicorn
-psycopg2-binary
+psycopg2-binary==2.9.9
